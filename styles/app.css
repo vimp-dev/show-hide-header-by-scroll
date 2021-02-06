@@ -1,0 +1,29 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.header {
+    background-color: tomato;
+    height: 50px;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform .1s linear;
+}
+
+.header.hide {
+    transform: translateY(-50px);
+}
+
+main {
+    background-color: azure;
+    height: 2000px;
+}
